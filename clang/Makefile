@@ -1,6 +1,7 @@
-TARGET=app.o
+PROGNAME := BT
 SRCDIR := src
 OUTDIR := build
+TARGET := ${OUTDIR}/${PROGNAME}
 SRCS := $(shell ls $(SRCDIR)/*.c)
 OBJS := $(addprefix $(OUTDIR)/,$(patsubst %.c,%.o,$(SRCS)))
 
